@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+docker-install -r -u -c certbot
+
+mkdir -p /repo /repo/letsencrypt
+ln -s /repo/letsencrypt /etc/letsencrypt
+

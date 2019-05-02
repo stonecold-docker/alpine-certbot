@@ -25,6 +25,7 @@
 
 ----------------------------------------
 #### Run
+
 * x64
 ```sh
 docker run -d \
@@ -59,7 +60,7 @@ docker run -d \
 ```
 
 ##### Notes
-* Certbot does not offer change ports, *You must set `-p 80:80/tcp -p 443:443/tcp`.* 
+    - Certbot does not offer change ports, *You must set `-p 80:80/tcp -p 443:443/tcp`.* 
 
 
 
@@ -68,10 +69,8 @@ docker run -d \
 
 * Nothing to do.
     - It will automatically renew every 2 month. 
-
-##### Notes
-    -  If you don't have letsencrypt yet, you should set USER_EMAIL and CERT_DOMAIN.
-       Also you need to mount /repo (Because cert file generate in docker container)
+    - If you don't have letsencrypt yet, you should set USER_EMAIL and CERT_DOMAIN.
+      Also you need to mount /repo (Because cert file generate in docker container)
 
 
 

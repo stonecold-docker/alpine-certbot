@@ -2,8 +2,21 @@
 
 set -e
 
-docker-install -r -u -c certbot
+echo "==> Installing required packages"
+PKG_LIB="certbot"
+PKG_DEV=""
+docker-install -r -u ${PKG_LIB} ${PKG_DEV}
+echo "==> OK"
+echo
 
+echo "==> Uninstalling unnecessary packages"
+docker-isntall -d -c ${PKG_DEV}
+echo "==> OK"
+echo
+
+echo "==> Setting basic configurations"
 mkdir -p /repo /repo/letsencrypt
 ln -s /repo/letsencrypt /etc/letsencrypt
+echo "==> OK"
+echo
 

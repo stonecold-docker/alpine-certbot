@@ -5,12 +5,14 @@ set -e
 echo "==> Installing required packages"
 PKG_LIB="certbot"
 PKG_DEV=""
+#Python3 conflic
+apk add --virtual py3-setuptools
 docker-install -r -u ${PKG_LIB} ${PKG_DEV}
 echo "==> OK"
 echo
 
 echo "==> Uninstalling unnecessary packages"
-docker-isntall -d -c ${PKG_DEV}
+docker-install -d -c ${PKG_DEV}
 echo "==> OK"
 echo
 

@@ -1,23 +1,13 @@
 # alpine-certbot
-
-#### [alpine-x64-certbot](https://hub.docker.com/r/forumi0721alpinex64/alpine-x64-certbot/)
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/forumi0721alpinex64/alpine-x64-certbot/latest)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721alpinex64/alpine-x64-certbot/latest)
-![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/forumi0721alpinex64/alpine-x64-certbot/latest)
 ![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721alpinex64/alpine-x64-certbot)
 ![Docker Stars](https://img.shields.io/docker/stars/forumi0721alpinex64/alpine-x64-certbot)
-#### [alpine-aarch64-certbot](https://hub.docker.com/r/forumi0721alpineaarch64/alpine-aarch64-certbot/)
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/forumi0721alpineaarch64/alpine-aarch64-certbot/latest)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721alpineaarch64/alpine-aarch64-certbot/latest)
-![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/forumi0721alpineaarch64/alpine-aarch64-certbot/latest)
-![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721alpineaarch64/alpine-aarch64-certbot)
-![Docker Stars](https://img.shields.io/docker/stars/forumi0721alpineaarch64/alpine-aarch64-certbot)
-#### [alpine-armhf-certbot](https://hub.docker.com/r/forumi0721alpinearmhf/alpine-armhf-certbot/)
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/forumi0721alpinearmhf/alpine-armhf-certbot/latest)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721alpinearmhf/alpine-armhf-certbot/latest)
-![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/forumi0721alpinearmhf/alpine-armhf-certbot/latest)
-![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721alpinearmhf/alpine-armhf-certbot)
-![Docker Stars](https://img.shields.io/docker/stars/forumi0721alpinearmhf/alpine-armhf-certbot)
+
+#### x86_64
+![Docker Image Version](https://img.shields.io/docker/v/forumi0721alpinex64/alpine-certbot/latest)
+![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721alpinex64/alpine-certbot/latest)
+#### aarch64
+![Docker Image Version](https://img.shields.io/docker/v/forumi0721alpineaarch64/alpine-gcertbot/aarch64)
+![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721alpineaarch64/alpine-gcertbot/aarch64)
 
 
 
@@ -25,7 +15,7 @@
 #### Description
 
 * Distribution : [Alpine Linux](https://alpinelinux.org/)
-* Architecture : x64,aarch64,armhf
+* Architecture : x64,aarch64
 * Appplication : [certbot](https://certbot.eff.org/)
     - Automatically enable HTTPS on your website with EFF's Certbot, deploying Let's Encrypt certificates.
 
@@ -41,7 +31,7 @@ docker run -d \
            -v /repo:/repo \
            -e USER_EMAIL=<email> \
            -e CERT_DOMAIN=<domain,...> \
-           forumi0721alpine[ARCH]/alpine-[ARCH]-certbot:latest
+           forumi0721/alpine-certbot:[ARCH_TAG]
 ```
 
 ##### Notes

@@ -1,13 +1,16 @@
 # alpine-certbot
-![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721alpinex64/alpine-x64-certbot)
-![Docker Stars](https://img.shields.io/docker/stars/forumi0721alpinex64/alpine-x64-certbot)
+![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721/alpine-certbot)
+![Docker Stars](https://img.shields.io/docker/stars/forumi0721/alpine-certbot)
 
-#### x86_64
-![Docker Image Version](https://img.shields.io/docker/v/forumi0721alpinex64/alpine-certbot/latest)
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721alpinex64/alpine-certbot/latest)
-#### aarch64
-![Docker Image Version](https://img.shields.io/docker/v/forumi0721alpineaarch64/alpine-gcertbot/aarch64)
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721alpineaarch64/alpine-gcertbot/aarch64)
+
+
+----------------------------------------
+### x86_64
+![Docker Image Version](https://img.shields.io/docker/v/forumi0721/alpine-certbot/latest)
+![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/alpine-certbot/latest)
+### aarch64
+![Docker Image Version](https://img.shields.io/docker/v/forumi0721/alpine-certbot/aarch64)
+![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/alpine-certbot/aarch64)
 
 
 

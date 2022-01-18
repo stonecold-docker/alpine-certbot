@@ -1,0 +1,10 @@
+image: forumi0721/alpine-certbot:latest
+manifests:
+  - image: forumi0721/alpine-certbot:x64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: forumi0721/alpine-certbot:aarch64
+    platform:
+      architecture: arm64
+      os: linux

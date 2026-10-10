@@ -5,10 +5,10 @@
 
 
 ----------------------------------------
-### x86_64
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/alpine-certbot/x64)
-### aarch64
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/alpine-certbot/aarch64)
+### amd64
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpinecertbot/latest?arch=amd64)
+### arm64
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpinecertbot/latest?arch=arm64)
 
 
 
@@ -16,8 +16,8 @@
 #### Description
 
 * Distribution : [Alpine Linux](https://alpinelinux.org/)
-* Architecture : x64,aarch64
-* Appplication : [certbot](https://certbot.eff.org/)
+* Architecture : amd64, arm64
+* Application : [certbot](https://certbot.eff.org/)
     - Automatically enable HTTPS on your website with EFF's Certbot, deploying Let's Encrypt certificates.
 
 
@@ -32,7 +32,7 @@ docker run -d \
            -v /repo:/repo \
            -e USER_EMAIL=<email> \
            -e CERT_DOMAIN=<domain,...> \
-           forumi0721/alpine-certbot:[ARCH_TAG]
+           forumi0721/alpine-certbot:latest
 ```
 
 ##### Notes

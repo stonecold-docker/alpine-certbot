@@ -6,9 +6,9 @@
 
 ----------------------------------------
 ### amd64
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpinecertbot/latest?arch=amd64)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpine-certbot/latest?arch=amd64)
 ### arm64
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpinecertbot/latest?arch=arm64)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpine-certbot/latest?arch=arm64)
 
 
 

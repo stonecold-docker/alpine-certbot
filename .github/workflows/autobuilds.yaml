@@ -19,11 +19,6 @@ on:
   # Allow manual builds from GitHub Actions.
   workflow_dispatch:
 
-  # Rebuild every Thursday at 2 AM KST.
-  schedule:
-    - cron: "0 2 * * 4"
-      timezone: "Asia/Seoul"
-
 # Serialize publishing workflows within this repository. Do not cancel an
 # in-progress publication; otherwise architecture tags may be left inconsistent.
 concurrency:
